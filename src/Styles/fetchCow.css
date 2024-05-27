@@ -1,0 +1,58 @@
+/* Styles/FetchCow.css */
+
+.fetch-cow {
+    padding: 20px;
+    background-color: #f2e5e5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fetch-cow-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .fetch-cow-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .fetch-cow-card {
+    background: rgb(209, 230, 240);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .fetch-cow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fetch-cow-card p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .fetch-cow-card strong {
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .fetch-cow-image {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  

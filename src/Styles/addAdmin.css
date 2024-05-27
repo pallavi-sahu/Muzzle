@@ -1,0 +1,68 @@
+/* Styles/AddAdmin.css */
+
+.add-admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f6e1e1;
+    padding: 20px;
+  }
+  
+  .add-admin-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #04406e;
+  }
+  
+  .add-admin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgb(212, 232, 232);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-admin-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-admin-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #04406e;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-admin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-admin-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .add-admin-list-item {
+    background: rgb(212, 232, 232);
+    padding: 10px 50px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

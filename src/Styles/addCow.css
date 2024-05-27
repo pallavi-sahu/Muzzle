@@ -1,9 +1,17 @@
 /* src/Styles/styles.css */
+.cow-container{
+  background-image: url('../assets/crop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  padding-top: 100px;
+}
 .add-cow-form {
-    
+  /* margin-top: 20px; */
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 100px 50px 100px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
@@ -11,6 +19,7 @@
   
   .add-cow-form h2 {
     text-align: center;
+    color: #6a11cb;
   }
   
   .add-cow-form input,
@@ -18,13 +27,13 @@
     display: block;
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 4px;
     border: 1px solid #ccc;
   }
   
   .add-cow-form button {
-    background-color: #28a745;
+    background-color: #6a11cb;
     color: white;
     border: none;
     cursor: pointer;

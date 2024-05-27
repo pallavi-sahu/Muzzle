@@ -75,7 +75,8 @@ function AddCow() {
   };
 
   return (
-    <form onSubmit={handleAddCow} className="add-cow-form">
+    <div className='cow-container'>
+      <form onSubmit={handleAddCow} className="add-cow-form">
       <h2>Add Cow</h2>
       <input type="text" value={eartag} onChange={(e) => setEartag(e.target.value)} placeholder="Eartag" required />
       <input type="text" value={insurance} onChange={(e) => setInsurance(e.target.value)} placeholder="Insurance" required />
@@ -94,6 +95,7 @@ function AddCow() {
       </div>
       <button type="submit">Add Cow</button>
     </form>
+    </div>
   );
 }
 

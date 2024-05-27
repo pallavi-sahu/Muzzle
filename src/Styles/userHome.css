@@ -1,0 +1,56 @@
+/* Styles/UserHome.css */
+
+.user-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    background-image: url('../assets/crop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    
+  }
+  
+  .user-home-header {
+    margin-bottom: 20px;
+  }
+  
+  .user-home-header h1 {
+    font-size: 32px;
+    color: #041b64;
+  }
+  
+  .user-home-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .user-home-list-item {
+    margin-bottom: 10px;
+  }
+  
+  .user-home-link {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .user-home-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }  

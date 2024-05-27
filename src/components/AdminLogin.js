@@ -3,6 +3,10 @@ import { auth, provider, signInWithPopup, database } from "../firebase";
 import { ref, get } from "firebase/database";
 import "../Styles/adminLogin.css";
 import { useNavigate } from "react-router-dom";
+import { enqueueSnackbar } from "notistack";
+import { Typography } from "@mui/material";
+import userIcon from '../assets/user-icon.svg'
+import usericon from '../assets/user.png'
 
 function AdminLogin() {
   const [adminEmails, setAdminEmails] = useState([]);
@@ -35,6 +39,7 @@ function AdminLogin() {
       }
     } catch (error) {
       console.error("Error during sign-in:", error);
+      enqueueSnackbar(error || "Not able to sign in", {variant:'error'})
     }
   };
 
@@ -48,8 +53,10 @@ function AdminLogin() {
   }
 
   return (
-    <div className="admin-login">
-      <h2>Admin Login</h2>
+    <div className="main-admin-login">
+     <div className="admin-login">
+     <Typography variant="h3" fontWeight='700'>Admin Login</Typography>
+      <img src={usericon} width='180px' height='180px'/>
       <button onClick={handleLogin}>
         <div className="google-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
@@ -58,6 +65,7 @@ function AdminLogin() {
         </div>
         Sign in with Google
       </button>
+     </div>
     </div>
   );
 }

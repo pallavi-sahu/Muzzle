@@ -1,0 +1,74 @@
+.main-container{
+    width:100vw;
+    height:100vh;
+    /* background-color: pink; */
+    background-image: url('../assets/crop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+   
+    
+}
+.login-container {
+    margin:auto;
+    background: #fff;
+    padding: 2em ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.loginheader{
+   
+    padding: 0.1px;
+    
+}
+
+.main-container h1{
+    color:#6a11cb;
+    padding-bottom: 5px;
+    padding-top:1px;
+}
+.input-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid rgb(133, 21, 21);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    padding: 0.95em 9.5em;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+/* button:hover {
+    background: #2575fc;
+} */
+.registerbutton{
+    background-color: #fff;
+    color:#6a11cb;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}

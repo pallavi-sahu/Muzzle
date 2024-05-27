@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { database } from '../firebase';
 import { ref, get, set, push } from 'firebase/database';
-
+import '../Styles/addAdmin.css'
 
 function AddAdmin() {
   const [adminEmails, setAdminEmails] = useState([]);
@@ -32,21 +32,23 @@ function AddAdmin() {
   };
 
   return (
-    <div>
-      <h2>Add Admin</h2>
-      <form onSubmit={handleAddAdmin}>
+    <div className="add-admin-container">
+      
+      <form onSubmit={handleAddAdmin} className="add-admin-form">
+      <h2 className="add-admin-title">Add Admin</h2>
         <input
           type="email"
           value={newAdminEmail}
           onChange={(e) => setNewAdminEmail(e.target.value)}
           placeholder="Enter admin email"
           required
+          className="add-admin-input"
         />
-        <button type="submit">Add Admin</button>
+        <button type="submit" className="add-admin-button">Add Admin</button>
       </form>
-      <ul>
+      <ul className="add-admin-list">
         {adminEmails.map((email, index) => (
-          <li key={index}>{email}</li>
+          <li key={index} className="add-admin-list-item">{email}</li>
         ))}
       </ul>
     </div>

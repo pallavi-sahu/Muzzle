@@ -9,7 +9,6 @@ import AddCow from './components/AddCow';
 import FetchCow from './components/FetchCow';
 import AddAdmin from './components/AddAdmin';
 import AdminLogin from './components/AdminLogin';
-import UserDashBoard from './components/UserDashboard';
 import Check from './components/Check';
 import logo from './assets/Karnataka-Logo.png'
 import './App.css'
@@ -32,7 +31,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/user/dashboard' element={<UserDashBoard/>}/>
+          {/* <Route path='/user/dashboard' element={<UserDashBoard/>}/> */}
           <Route path="/user/login" element={<UserLogin />} />
           <Route path="/user/register" element={<UserRegister />} />
           <Route path="/user/home" element={<UserHome />} />

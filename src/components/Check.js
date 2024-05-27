@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import '../Styles/check.css'
 import { enqueueSnackbar } from "notistack";
+import '../Styles/check.css'
 
 function Check() {
   const [uniqueId, setUniqueId] = useState("");
@@ -39,21 +39,21 @@ function Check() {
   };
 
   return (
-    <div>
+    <div className="check-container">
       <h1>Upload Image</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="image">Image:</label>
+        <div className="admin-image-upload">
+          <label htmlFor="image">Image</label>
           <input
             type="file"
             id="image"
             onChange={(e) => {
-              setResponse(null)
-              setImage(e.target.files[0])
+              setResponse(null);
+              setImage(e.target.files[0]);
             }}
           />
         </div>
-        <button type="submit">Upload</button>
+        <button type="submit" className="predict-btn">Predict</button>
       </form>
       {response && (
         <div className="response-div">
@@ -62,6 +62,8 @@ function Check() {
           <img
             src={`https://fd0d-1-6-29-197.ngrok-free.app/${response.cropped_image.path}`}
             alt="Cropped"
+            width='150px'
+            height='150px'
           />
         </div>
       )}

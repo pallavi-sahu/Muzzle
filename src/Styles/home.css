@@ -23,16 +23,51 @@
     border-radius: 10px;
   }
   
-  .HomePage_options{
+  /* .HomePage_options{
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    gap: 10px;
   }
-  .HomePage_options p{
+  
+  .hoome-links{
+    background-color: white;
+    padding: 10px;
+  }
+  .hoome-links link{
+    display: flex;
+  }
+  .hoome-links p{
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-  }
+  } */
 
+  .HomePage_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   
+  }
   
+  .home-links {
+    margin: 10px 0;
+    color: rgb(29, 29, 86);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .home-links a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .home-links .MuiBox-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
